@@ -5,6 +5,7 @@ This is a static website project built with HTML, CSS, and JavaScript. No build 
 ## Project Overview
 
 A responsive market landing page with:
+
 - Navigation bar
 - Hero section
 - Product grid
@@ -22,11 +23,13 @@ A responsive market landing page with:
 ## Development
 
 To view the project:
+
 1. Open `index.html` in a web browser or use a live server extension
 
 ## Customization
 
 Edit any HTML/CSS/JavaScript file directly to customize:
+
 - Colors (CSS variables in `styles.css`)
 - Content (text in `index.html`)
 - Functionality (functions in `script.js`)
