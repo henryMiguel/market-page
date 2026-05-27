@@ -1,8 +1,17 @@
 ﻿const inventory = [];
+const inventoryObjects = [];
 const maxItems = 4;
 
 const objects = document.querySelectorAll(".collectible");
 const slots = document.querySelectorAll(".slot");
+
+// Map of object combinations to archetype URLs
+const archetypeMap = {
+  "alien-lighter-moeda":"https://www.researchcatalogue.net/view/4308270/4494897",
+  // Add more combinations below as needed
+  // "lighter-moeda-pulseira": "https://www.researchcatalogue.net/view/DIFFERENT_ID",
+  // "alien-moeda-pulseira": "https://www.researchcatalogue.net/view/ANOTHER_ID",
+};
 
 // event listener for each object
 objects.forEach((object) => {
@@ -10,8 +19,10 @@ objects.forEach((object) => {
     if (inventory.length >= maxItems) return;
 
     const image = object.dataset.image;
+    const objectName = object.dataset.object;
 
     inventory.push(image);
+    inventoryObjects.push(objectName);
 
     updateInventory();
 
@@ -33,13 +44,25 @@ function updateInventory() {
     }
   });
 
-  // check if inventory is full and redirect to archetype #1
+  // check if inventory is full and redirect to appropriate archetype
   if (inventory.length >= maxItems) {
     setTimeout(() => {
-      window.location.href =
-        "https://www.researchcatalogue.net/view/4308270/4494897";
+      const archetypeURL = getArchetypeURL(inventoryObjects);
+      window.location.href = archetypeURL;
     }, 1200);
   }
+}
+
+// function to determine archetype URL based on collected objects
+function getArchetypeURL(objects) {
+  const combination = objects.sort().join("-");
+
+  // Return matching URL, or first archetype as default
+  return (
+    archetypeMap[combination] ||
+    Object.values(archetypeMap)[0] ||
+    "https://www.researchcatalogue.net/view/4308270/4494897"
+  );
 }
 
 // persist inventory in localStorage
