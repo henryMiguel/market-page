@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Market Page</title>
+    <title>Market Fair</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,19 +19,32 @@
       <div class="slot"></div>
       <div class="slot"></div>
     </div>
+
+    <audio autoplay loop>
+      <source src="marketSounds_02.mp3" type="audio/mpeg" />
+    </audio>
+
     <div id="world">
       <img src="imgs/colagem-02.png" class="background" />
-        <!-- #1 MOEDA -->
-      <div class="object moeda collectible" data-object="moeda" data-image="imgs/Moeda.png">
+      <!-- #1 MOEDA -->
+      <div
+        class="object moeda collectible"
+        data-object="globeCoin"
+        data-image="imgs/Moeda.png"
+      >
         <img src="imgs/Moeda.png" />
         <div class="tooltip">
-          We're tired! Always forgotten, always being useless weight. We jumped
-          from his pocket when he sat down. Now we're scattered on the floor —
-          finally free from each other.
+          We got tired! Always forgotten, always being useless weight. We jumped
+          from his pocket when he sat down. Now I am scattered on the floor —
+          finally free from the others.
         </div>
       </div>
       <!-- #2 LIGHTER -->
-      <div class="object lighter collectible" data-object="lighter" data-image="imgs/Isqueiro.png">
+      <div
+        class="object lighter collectible"
+        data-object="lighter"
+        data-image="imgs/Isqueiro.png"
+      >
         <img src="imgs/Isqueiro.png" />
         <div class="tooltip">
           I'm white, worn, with an unstable flame. I've passed through too many
@@ -40,7 +53,11 @@
         </div>
       </div>
       <!-- #3 ALIEN -->
-      <div class="object alien collectible" data-object="alien" data-image="imgs/Allien.png">
+      <div
+        class="object alien collectible"
+        data-object="alien"
+        data-image="imgs/Allien.png"
+      >
         <img src="imgs/Allien.png" />
         <div class="tooltip">
           I've been stuck to my own protective paper for years, with colors
@@ -52,38 +69,423 @@
         </div>
       </div>
       <!-- #4 GUARDANAPO -->
-      <div class="object guardanapo collectible" data-object="guardanapo" data-image="imgs/guardanapo_beijo.png">
+      <div
+        class="object guardanapo collectible"
+        data-object="guardanapo"
+        data-image="imgs/guardanapo_beijo.png"
+      >
         <img src="imgs/guardanapo_beijo.png" />
         <div class="tooltip">
-         I was never meant to survive the evening. Just a napkin pulled from beneath a drink, marked with a quick kiss and a number scribbled before goodbye. He folded me carefully and slipped me into his pocket like I was something precious. Weeks passed before he remembered to call. 
+          I was never meant to survive the evening. Just a napkin pulled from
+          beneath a drink, marked with a quick kiss and a number scribbled
+          before goodbye. He folded me carefully and slipped me into his pocket
+          like I was something precious. Weeks passed before he remembered to
+          call.
         </div>
       </div>
       <!-- #5 CARREGADOR -->
-      <div class="object carregador collectible" data-object="carregador" data-image="imgs/carregador.png">
+      <div
+        class="object carregador collectible"
+        data-object="carregador"
+        data-image="imgs/carregador.png"
+      >
         <img src="imgs/carregador.png" />
         <div class="tooltip">
-        Always twisted, always pulled by the cord. Never with care. I am white, simple, essential — but never valued. 
-        This time I was left behind, coiled in some random outlet. Let's see how long she lasts without me.
+          Always twisted, always pulled by the cord. Never with care. I am
+          white, simple, essential — but never valued. This time I was left
+          behind, coiled in some random outlet. Let's see how long she lasts
+          without me.
         </div>
       </div>
-        <!-- #6 MOCHILA -->
-      <div class="object mochila collectible" data-object="mochila" data-image="imgs/Mochila.png">
+      <!-- #6 MOCHILA -->
+      <div
+        class="object mochila collectible"
+        data-object="mochila"
+        data-image="imgs/Mochila.png"
+      >
         <img src="imgs/Mochila.png" />
         <div class="tooltip">
-        I am forgotten on the dusty floor of the bus stop, heavy with the books and technology I carry on my back, but my true heart is a secret hidden in the smallest pocket. Inside, I protect an aqua-green stone, cold and smooth, which still smells of salt; we were abandoned to our fate and now share the same weight of loneliness, waiting for our straps and its colors to once again find the hands that knew how to value us.
+          I am forgotten on the dusty floor of the bus stop, heavy with the
+          books and technology I carry on my back, but my true heart is a secret
+          hidden in the smallest pocket. Inside, I protect an aqua-green stone,
+          cold and smooth, which still smells of salt; we were abandoned to our
+          fate and now share the same weight of loneliness, waiting for our
+          straps and its colors to once again find the hands that knew how to
+          value us.
         </div>
       </div>
 
-       <!-- #7 CHAPEU -->
-      <div class="object hat collectible" data-object="hat" data-image="imgs/ChapéuPalha.png">
+      <!-- #7 CHAPEU -->
+      <div
+        class="object hat collectible"
+        data-object="hat"
+        data-image="imgs/ChapéuPalha.png"
+      >
         <img src="imgs/ChapéuPalha.png" />
         <div class="tooltip">
-        I broke free from the straw threads and rolled through the stubble of the field, carried by a gust of wind that 
-        ripped me from my post. I spent years protecting the scarecrow from the sun and the rain, but now I am just an 
-        unraveled ball of wool on the ground, far from my owner's head, unable to scare away even the smallest of birds.
+          I broke free from the straw threads and rolled through the stubble of
+          the field, carried by a gust of wind that ripped me from my post. I
+          spent years protecting the scarecrow from the sun and the rain, but
+          now I am just an unraveled ball of wool on the ground, far from my
+          owner's head, unable to scare away even the smallest of birds.
         </div>
       </div>
 
+      <!-- #8 OCULISTA -->
+      <div
+        class="object oculista collectible"
+        data-object="oculista"
+        data-image="imgs/jose-costa-oculista.png"
+      >
+        <img src="imgs/jose-costa-oculista.png" />
+        <div class="tooltip">
+          My pages are still crisp, filled with neat, handwritten appointments
+          for frame fittings and cataract checks, all stamped with the year 1984
+          in faded blue ink. I was meant to be the steady anchor of that
+          examination room, watching patients blink into the bright light while
+          my grid measured out their days. Instead, I was pulled down during the
+          cleanup and slipped behind the heavy filing cabinet. Now I lie here in
+          the dark, my grid useless and my numbers frozen in a past year,
+          listening to them ask what day it is while I hold the answer hidden in
+          the dust.
+        </div>
+      </div>
+
+      <!-- #9 PULSEIRA -->
+      <div
+        class="object pulseira collectible"
+        data-object="pulseira"
+        data-image="imgs/Pulseira.png"
+      >
+        <img src="imgs/Pulseira.png" />
+        <div class="tooltip">
+          I wrapped around her wrist for three years, feeling her pulse beneath
+          me, marking the seasons with tiny scratches. Now I lie coiled on the
+          ground, a forgotten circle of memory. She bought a new one, something
+          shinier. I understand — I'm outdated, dull, a relic of a different
+          version of her life.
+        </div>
+      </div>
+
+      <!-- #10 PELUCHE TARTARUGA -->
+      <div
+        class="object tartaruga collectible"
+        data-object="tartaruga"
+        data-image="imgs/PelucheTartaruga.png"
+      >
+        <img src="imgs/PelucheTartaruga.png" />
+        <div class="tooltip">
+          I was his favorite when he was five. My shell has been hugged a
+          thousand times, my little eyes stared at through countless goodbyes.
+          Now I sit on the top shelf of his childhood closet, waiting for him to
+          remember that I was once his entire world. But he's growing up, and
+          I'm just getting older.
+        </div>
+      </div>
+
+      <!-- #11 VELAS -->
+      <div
+        class="object velas collectible"
+        data-object="velas"
+        data-image="imgs/velas.png"
+      >
+        <img src="imgs/velas.png" />
+        <div class="tooltip">
+          We were ready to shine and receive the wishes of the night, but we
+          were left forgotten at the bottom of the shopping bag, inside the
+          closet. We heard the nervous laughter and the timid applause echoing
+          through the dining room; we were made to be the center of attention,
+          but the party went on in the dark and the cake was blown out without a
+          flame… It was sad.
+        </div>
+      </div>
+
+      <!-- #12 ANEL -->
+      <div
+        class="object anel collectible"
+        data-object="anel"
+        data-image="imgs/Anel.png"
+      >
+        <img src="imgs/Anel.png" />
+        <div class="tooltip">
+          “Are you still there?” — I am… but it's not like before. I am golden,
+          smooth, a pair — or at least we should be. One day I was taken off
+          "just for a moment". We became separated. Funny how something made to
+          last forever… gets lost so easily.
+        </div>
+      </div>
+
+      <!-- #13 BILHETE ROSA -->
+      <div
+        class="object bilhete collectible"
+        data-object="bilhete"
+        data-image="imgs/BilheteRosa.png"
+      >
+        <img src="imgs/BilheteRosa.png" />
+        <div class="tooltip">
+          I am a ticket stub, faded pink, creased from being folded and unfolded
+          countless times. The date on me leads to a night that still makes her
+          smile. But he never asks about me anymore.
+        </div>
+      </div>
+
+      <!-- #14 CANETA MULTICOR -->
+      <div
+        class="object caneta collectible"
+        data-object="caneta"
+        data-image="imgs/CanetaMulticor.png"
+      >
+        <img src="imgs/CanetaMulticor.png" />
+        <div class="tooltip">
+          I have six colors, but I've only ever been used with one. The others
+          sit dormant inside me, forgotten like unused potential. Children love
+          me when I'm new, but grow bored before they discover all of what I can
+          be.
+        </div>
+      </div>
+
+      <!-- #15 CARTÃO SANTO -->
+      <div
+        class="object cartao-santo collectible"
+        data-object="cartaoSanto"
+        data-image="imgs/CartãoSanto.png"
+      >
+        <img src="imgs/CartãoSanto.png" />
+        <div class="tooltip">
+          I fell into a dark corner of the coffee shop counter, with my paper
+          corners already worn and the image of the Little Poor Man of Assisi
+          turned toward the wood. I spent so much time kept close to my owner's
+          heart, serving as a safe harbor in moments of distress, and now I am
+          just a piece of illustrated paper, forgotten among cups and coins.
+        </div>
+      </div>
+
+      <!-- #16 CARTÃO VISA -->
+      <div
+        class="object cartao-visa collectible"
+        data-object="cartaoVisa"
+        data-image="imgs/CartãoVisa.png"
+      >
+        <img src="imgs/CartãoVisa.png" />
+        <div class="tooltip">
+          Her problem! I gleamed on the gray floor of the parking lot, right
+          under the wheel of a car, helpless for not being in the right place. I
+          was the symbol of security and the purchasing power kept in that
+          pocket, but my golden gleam ended up forgotten on the asphalt at the
+          exact moment when my owner needed me to take my responsibility at the
+          store counter.
+        </div>
+      </div>
+
+      <!-- #17 DENTE -->
+      <div
+        class="object dente collectible"
+        data-object="dente"
+        data-image="imgs/Dente.png"
+      >
+        <img src="imgs/Dente.png" />
+        <div class="tooltip">
+          I fell. Literally. One day I was there, firm, white enough. The next…
+          loose. I was put away, forgotten, maybe thrown out. Strange how
+          something that was part of him… becomes disposable so fast.
+        </div>
+      </div>
+
+      <!-- #18 DOLLAR -->
+      <div
+        class="object dollar collectible"
+        data-object="dollar"
+        data-image="imgs/Dollar.png"
+      >
+        <img src="imgs/Dollar.png" />
+        <div class="tooltip">
+          I was a lifeline, a small fortune that could buy freedom for an
+          evening. But inflation made me worth less each year, and now I'm
+          worthless, kept only for the memory of what I once could do.
+        </div>
+      </div>
+
+      <!-- #19 POLAROID -->
+      <div
+        class="object polaroid collectible"
+        data-object="polaroid"
+        data-image="imgs/Polaroid.png"
+      >
+        <img src="imgs/Polaroid.png" />
+        <div class="tooltip">
+          I captured a moment of pure joy, my chemicals freezing a smile
+          forever. But my colors are fading, the faces becoming strangers.
+          Memories don't age like photographs do; they only get clearer, while I
+          only get dimmer.
+        </div>
+      </div>
+
+      <!-- #20 POSTAL VERMELHO -->
+      <div
+        class="object postal collectible"
+        data-object="postal"
+        data-image="imgs/PostalVermelho.png"
+      >
+        <img src="imgs/PostalVermelho.png" />
+        <div class="tooltip">
+          I was written with enthusiasm, stamped and sorted into canvas bags,
+          but a detour on a conveyor belt or carelessness in some drawer
+          canceled my trip before the last stop. Now, forgotten in the dark
+          bottom of a post office cabinet, I hold a "wish you were here" and a
+          colorful landscape that no one will read, turned into an eternal
+          secret that will never fulfill the promise of delivering the longing
+          to whom it rightfully belongs.
+        </div>
+      </div>
+
+      <!-- #21 FINANCE DIVISION -->
+      <div
+        class="object finance collectible"
+        data-object="finance"
+        data-image="imgs/finance division.png"
+      >
+        <img src="imgs/finance division.png" />
+        <div class="tooltip">
+          I spent months forgotten in a drawer, compressed between useless
+          papers and rusty paperclips. He only remembered me when I disappeared.
+          I am a white sheet, crumpled at the corners, with signatures and
+          coffee stains that prove I was once important. Now I am folded at the
+          bottom of the wrong folder, listening to the panic on the other side
+          of the desk. Ahahahhhahahahah
+        </div>
+      </div>
+
+      <!-- #22 thorsvalden museum-->
+      <div
+        class="object forum collectible"
+        data-object="forum"
+        data-image="imgs/forum romanum.png"
+      >
+        <img src="imgs/forum romanum.png" />
+        <div class="tooltip">
+          I am an ancient echo, a postcard of history. I was meant to remind
+          someone of ruins and grandeur, but instead I became a souvenir of a
+          trip they no longer remember. How fitting for a ruin to itself become
+          forgotten.
+        </div>
+      </div>
+
+      <!-- #23 CLOCK -->
+      <div
+        class="object clock collectible"
+        data-object="clock"
+        data-image="imgs/objects_0000_clock.png"
+      >
+        <img src="imgs/objects_0000_clock.png" />
+        <div class="tooltip">
+          He says he loses me every day. Funny. I never get lost — he is the one
+          who wastes me. I am invisible, constant, impossible to grasp. And even
+          so, I always slip away from him.
+        </div>
+      </div>
+
+      <!-- #24 ARMANI WALLET -->
+      <div
+        class="object wallet collectible"
+        data-object="wallet"
+        data-image="imgs/objects_0001_armaniWallet.png"
+      >
+        <img src="imgs/objects_0001_armaniWallet.png" />
+        <div class="tooltip">
+          I am luxury, or at least the symbol of it. My leather still smells of
+          new beginnings and confidence. But I've been empty for months now,
+          worn not from use but from the weight of pretending to matter more
+          than I do.
+        </div>
+      </div>
+
+      <!-- #25 SOCKS -->
+      <div
+        class="object socks collectible"
+        data-object="socks"
+        data-image="imgs/objects_0002_socks.png"
+      >
+        <img src="imgs/objects_0002_socks.png" />
+        <div class="tooltip">
+          I came as a pair once, kept together by a clip. My match disappeared
+          in the wash years ago, and I've been living alone ever since, paired
+          with strangers. I've lost my purpose, and now I'm just a single sock
+          waiting for the bin.
+        </div>
+      </div>
+
+      <!-- #26 REMOTE -->
+      <div
+        class="object remote collectible"
+        data-object="remote"
+        data-image="imgs/objects_0003_remote.png"
+      >
+        <img src="imgs/objects_0003_remote.png" />
+        <div class="tooltip">
+          I control everything, or at least I used to. My buttons were pressed
+          millions of times, commanding entertainment and escape. But now the
+          batteries are dead, and I sit on the couch, a relic of when people
+          needed a device to run their lives.
+        </div>
+      </div>
+
+      <!-- #27 BACKPACK -->
+      <div
+        class="object backpack collectible"
+        data-object="backpack"
+        data-image="imgs/objects_0004_backpack.png"
+      >
+        <img src="imgs/objects_0004_backpack.png" />
+        <div class="tooltip">
+          I was built to carry dreams and adventures. My straps bore the weight
+          of endless possibilities. But now I sit in a closet, dust settling on
+          my zippers, a monument to ambitions that never left the house.
+        </div>
+      </div>
+
+      <!-- #28 COIN -->
+      <div
+        class="object coin collectible"
+        data-object="godCoin"
+        data-image="imgs/objects_0005_coin.png"
+      >
+        <img src="imgs/objects_0005_coin.png" />
+        <div class="tooltip">
+          I am currency, but my value has changed. Once I bought something real,
+          held meaning in an exchange. Now I'm kept for luck, rubbed smooth by
+          superstitious fingers, more magic than money.
+        </div>
+      </div>
+
+      <!-- #29 UMBRELLA -->
+      <div
+        class="object umbrella collectible"
+        data-object="umbrella"
+        data-image="imgs/objects_0006_umbrella.png"
+      >
+        <img src="imgs/objects_0006_umbrella.png" />
+        <div class="tooltip">
+          I was protection from the elements, a shelter carried through
+          countless storms. But I've been left behind on trains and in
+          restaurants, and each time I waited to be reclaimed. Now I sit in lost
+          and found, just another umbrella with no one to claim me.
+        </div>
+      </div>
+
+      <!-- #30 SUNGLASSES -->
+      <div
+        class="object sunglasses collectible"
+        data-object="sunglasses"
+        data-image="imgs/objects_0007_sunglasses.png"
+      >
+        <img src="imgs/objects_0007_sunglasses.png" />
+        <div class="tooltip">
+          I am a disguise, a way to hide eyes that might reveal too much. I've
+          seen what she wanted to hide from the world, and she used me to hide
+          from it too. Now I sit scratched and broken, no longer able to conceal
+          anything.
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

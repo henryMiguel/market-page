@@ -1,4 +1,4 @@
-﻿body {
+body {
   margin: 0;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -36,17 +36,21 @@
   transform: scale(0.35);
 }
 
-
 .tooltip {
   opacity: 0;
   transition: opacity 0.2s ease;
   position: absolute;
-  background-color: #1C0118;
-  color: #fff;
+
+  bottom: calc(100% + 5px);
+  /* left: 50%; */
+  transform: translateX(-5%);
+
+  background-color: #1c0118;
+  color: #f1f1f1;
   padding: 20px 30px;
   border-radius: 4px;
   font-size: 1.75em;
-  transform: translate(-5%, -60%);
+  /* transform: translate(-5%, -60%); */
   z-index: 10;
 }
 
@@ -54,60 +58,61 @@
   opacity: 1;
 }
 
-#inventory{
-  position:fixed;
-  top:20px;
+#inventory {
+  position: fixed;
+  top: 20px;
   /* bottom:20px; */
-  left:50%;
-  transform:translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 
-  display:flex;
-  gap:12px;
+  display: flex;
+  gap: 12px;
 
-  padding:14px 18px;
+  padding: 14px 18px;
 
-  background:rgba(28,1,24,0.25);
+  background: rgba(28, 1, 24, 0.25);
   backdrop-filter: blur(8px);
 
-  border-radius:20px;
+  border-radius: 20px;
 
-  z-index:9999;
+  z-index: 9999;
 }
 
-.slot{
-  width:70px;
-  height:70px;
+.slot {
+  width: 70px;
+  height: 70px;
 
-  background:rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 
-  border:1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 
-  border-radius:12px;
+  border-radius: 12px;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  overflow:hidden;
+  overflow: hidden;
 }
 
-.slot img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
+.slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Object Classes */
 
-.object.moeda {
+.moeda {
   left: 12%;
-  top: 30%;
+  top: 40%;
+  transform: scale(0.1);
 }
 
 .lighter {
   left: 120%;
   top: 58%;
-  transform: rotate(-60deg) scale(0.15);
+  transform: rotate(-60deg) scale(0.1);
 }
 
 .alien {
@@ -128,14 +133,144 @@
   transform: rotate(-45deg) scale(0.15);
 }
 
-.guardanapo{
-    left: 223%;
-    top: 28%;
-    transform: rotate(45deg) scale(0.15);
+.guardanapo {
+  left: 223%;
+  top: 28%;
+  transform: rotate(45deg) scale(0.15);
 }
 
-.hat{
-    left: 248%;
-    top: 11%;
-    transform: rotate(-90deg) scale(0.15);
+.hat {
+  left: 248%;
+  top: 11%;
+  transform: rotate(-90deg) scale(0.15);
+}
+
+.oculista {
+  left: 200%;
+  top: 15%;
+  transform: scale(0.15);
+}
+
+.tartaruga {
+  left: 180%;
+  top: 20%;
+  transform: rotate(90deg) scale(0.15);
+}
+
+.velas {
+  left: 220%;
+  top: 40%;
+  transform: scale(0.15);
+}
+
+.pulseira {
+  left: 265%;
+  top: 27%;
+  transform: rotate(45deg) scale(0.05);
+}
+
+.anel {
+  left: 310%;
+  top: 50%;
+  transform: scale(0.05);
+}
+
+.bilhete {
+  left: 230%;
+  top: 28%;
+  transform: rotate(180deg) scale(0.15);
+}
+
+.caneta {
+  left: 30%;
+  top: 5%;
+  transform: rotate(180deg) scale(0.15);
+}
+
+.cartao-santo {
+  left: 320%;
+  top: 33%;
+  transform: scale(0.15);
+}
+
+.cartao-visa {
+  left: 135%;
+  top: -7%;
+  transform: rotate(20deg) scale(0.07);
+}
+
+.dente {
+  left: 15%;
+  top: 10%;
+}
+
+.dollar {
+  left: 110%;
+  top: 10%;
+  transform: scale(0.1);
+}
+
+.polaroid {
+  left: 180%;
+  top: 10%;
+  transform: rotate(-90deg) scale(0.1);
+}
+
+.postal {
+  left: 95%;
+  top: 30%;
+  transform: scale(0.1);
+}
+
+.finance {
+  left: 306%;
+  top: 15%;
+  transform: scale(0.1);
+}
+
+.forum {
+  left: 210%;
+  top: 50%;
+  transform: scale(0.1);
+}
+
+.clock {
+  left: 68%;
+  top: 60%;
+}
+
+.wallet {
+  left: 40%;
+  top: 70%;
+}
+
+.socks {
+  left: 125%;
+  top: 15%;
+}
+
+.remote {
+  left: 275%;
+  top: 65%;
+  transform: rotate(-90deg) scale(0.1);
+}
+
+.backpack {
+  left: 50%;
+  top: 55%;
+}
+
+.coin {
+  left: 195%;
+  top: 35%;
+}
+
+.umbrella {
+  left: 185%;
+  top: 30%;
+}
+
+.sunglasses {
+  left: 150%;
+  top: 60%;
 }
