@@ -219,7 +219,7 @@ body {
 .postal {
   left: 95%;
   top: 30%;
-  transform: scale(0.1);
+  transform:rotate(-180deg) scale(0.1);
 }
 
 .finance {
@@ -236,7 +236,8 @@ body {
 
 .clock {
   left: 68%;
-  top: 60%;
+  top: 6%;
+  transform: rotate(-180deg) scale(0.1);
 }
 
 .wallet {
@@ -258,6 +259,7 @@ body {
 .backpack {
   left: 50%;
   top: 55%;
+  transform: rotate(-90deg) scale(0.3);
 }
 
 .coin {

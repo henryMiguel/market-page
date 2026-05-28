@@ -42,9 +42,9 @@ const archetypeMap = {
     "https://www.researchcatalogue.net/view/4308270/4498651",
 
   // 7. The Chaotic — cracked objects, tangled chargers, coins
-  "carregador-coin-dollar-remote":
+  "carregador-godCoin-dollar-remote":
     "https://www.researchcatalogue.net/view/4308270/4498685",
-  "carregador-coin-wallet-socks":
+  "carregador-godCoin-socks-wallet":
     "https://www.researchcatalogue.net/view/4308270/4498685",
 
   // 8. The Melancholic — time, forgotten things
@@ -126,12 +126,15 @@ function getArchetypeURL(objects) {
   // debug: log the combination to verify correct key generation
   console.log(combination);
 
-  // Return matching URL, or first archetype as default
-  return (
-    normalizedArchetypeMap[combination] ||
-    Object.values(normalizedArchetypeMap)[0] ||
-    "https://www.researchcatalogue.net/view/4308270/4494897"
-  );
+  // If exact combination exists, return it
+  if (normalizedArchetypeMap[combination]) {
+    return normalizedArchetypeMap[combination];
+  }
+
+  // Otherwise, get all unique URLs and pick a random one
+  const allUrls = Object.values(normalizedArchetypeMap);
+  const randomUrl = allUrls[Math.floor(Math.random() * allUrls.length)];
+  return randomUrl;
 }
 
 // persist inventory in localStorage
